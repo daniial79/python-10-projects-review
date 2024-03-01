@@ -1,0 +1,11 @@
+wheel
+chardet
+docutils
+filestack-python
+idna
+Kivy
+Kivy-Garden
+Pygments
+requests
+trafaret
+urllib3
