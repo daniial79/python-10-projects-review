@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Form</title>
+
+    <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+    <h1>Bill Form</h1>
+    <p>Fill in the form and press the button to get the result</p>
+
+    <form action="/result", method="post">
+        {{billform.amount.label}} {{billform.amount}} 
+        <br>
+        {{billform.period.label}} {{billform.period}}
+        <hr>
+        
+        <p>First Flatmate 1:</p>
+        <br>
+        {{billform.flatmate_one_name.label}} {{billform.flatmate_one_name}} <br>
+        {{billform.flatmate_one_days.label}} {{billform.flatmate_one_days}}
+        <hr>
+
+
+        <p>First Flatmate 2:</p>
+        <br>
+        {{billform.flatmate_two_name.label}} {{billform.flatmate_two_name}} <br>
+        {{billform.flatmate_two_days.label}} {{billform.flatmate_two_days}}
+        <br>
+
+        {{billform.button}}
+    </form>
+</body>
+</html>
