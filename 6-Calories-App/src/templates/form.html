@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/result", method="post">
+        {{calories_form.weight.label}} <br>
+        {{calories_form.weight}}
+        <hr>
+
+        {{calories_form.height.label}} <br>
+        {{calories_form.height}}
+        <hr>
+
+        {{calories_form.age.label}} <br>
+        {{calories_form.age}}
+        <hr>
+
+        <p>we need the temprature of the area you live in for better and more precise calculation</p>
+
+        {{calories_form.country.label}} <br>
+        {{calories_form.country}}
+        <hr>
+
+        {{calories_form.city.label}} <br>
+        {{calories_form.city}}
+        <br>
+
+        {{calories_form.button}}
+    </form>
+    
+</body>
+</html>
